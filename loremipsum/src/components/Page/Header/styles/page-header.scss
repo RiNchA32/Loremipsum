@@ -1,0 +1,19 @@
+.page-header {
+  background:  #10101D;
+
+  &__logo{
+    height: auto;
+    width: 247px;
+  }
+
+  &__content{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-between;
+    min-height: 100px;
+    padding: 32px 0;
+    max-width: 1169px;
+    margin: 0 auto;
+  }
+}
