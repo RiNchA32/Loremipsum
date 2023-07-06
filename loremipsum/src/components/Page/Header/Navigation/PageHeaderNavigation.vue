@@ -2,6 +2,7 @@
     <nav class="page-header-navigation">
         <ul class="page-header-navigation__list">
             <li v-for="item in navigationList"
+                :key="item"
                 class="page-header-navigation__list-item">
                 <PageHeaderNavigationButton :text="item"/>
             </li>
