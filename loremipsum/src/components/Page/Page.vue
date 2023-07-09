@@ -4,16 +4,18 @@
         <slot>
 
         </slot>
+        <PageFooter/>
     </div>
 </template>
 
 <script lang="ts">
     import {defineComponent} from 'vue';
     import PageHeader from '@/components/Page/Header/PageHeader.vue';
+    import PageFooter from '@/components/Page/Footer/PageFooter.vue';
 
     export default defineComponent({
         name: 'Page',
-        components: {PageHeader},
+        components: {PageFooter, PageHeader},
     });
 </script>
 

@@ -1,0 +1,13 @@
+.page-footer-button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  &__icon {
+    font-size: 20px;
+  }
+
+  &__text {
+    font-size: 13px;
+  }
+}

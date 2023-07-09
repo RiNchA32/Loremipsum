@@ -1,17 +1,17 @@
 <template>
-    <div class="page-footer-navigation-button">
+    <ul class="page-footer-list">
         <slot></slot>
-    </div>
+    </ul>
 </template>
 
 <script lang="ts">
     import {defineComponent} from 'vue';
 
     export default defineComponent({
-        name: 'PageFooterNavigationButton',
+        name: 'PageFooterList',
     });
 </script>
 
 <style lang="scss">
-@import 'styles/page-footer-navigation-button.scss';
+@import 'styles/page-footer-list.scss';
 </style>
