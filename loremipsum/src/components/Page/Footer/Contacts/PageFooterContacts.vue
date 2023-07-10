@@ -6,7 +6,10 @@
                 :key="item"
             >
                 <PageFooterButton :text="item.text"
-                                  :ico="item.icon"/>
+                                  :ico="item.icon"
+                                  :href="item.href"
+                                  tag="a"
+                                  target="_blank"/>
             </PageFooterListItem>
         </PageFooterList>
     </div>
@@ -27,12 +30,12 @@
                 {
                     text: 'info@ipsum228.com',
                     icon: Icons.Envelope,
-
+                    href: 'mailto:info@ipsum228.com',
                 },
                 {
                     text: 'Мы вконтакте',
                     icon: Icons.Vk,
-
+                    href: 'http://vk.com',
                 },
             ]
 

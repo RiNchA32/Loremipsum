@@ -1,8 +1,15 @@
 .page-header-navigation-button {
-   &__text {
-     color: #FFFFFF;
+  color: #FFFFFF;
+  transition: color .3s linear;
+  text-decoration: none;
+
+  &:hover,
+  &--is-active {
+   color: #43ABF0;
+  }
+
+  &__text {
      font-size: 13px;
      text-transform: uppercase;
    }
-
 }

@@ -6,7 +6,8 @@
                 :key="item"
                 class="page-header-navigation__list-item"
             >
-                <PageHeaderNavigationButton :text="item"/>
+                <PageHeaderNavigationButton :text="item.text"
+                                            :to="item.to"/>
             </li>
         </ul>
     </nav>
@@ -21,7 +22,25 @@
         name: 'PageHeaderNavigation',
         components: {PageHeaderNavigationButton},
         setup() {
-            const navigationList = ['Бизнес', 'О нас', 'цены', 'Оформить заказ'];
+            const navigationList = [
+                {
+                    text: 'Бизнес',
+                    to: '/',
+                },
+                {
+                    text: 'О нас',
+                    to: '/about',
+                },
+                {
+                    text: 'цены',
+                    to: '/prices',
+                },
+                {
+                    text: 'Оформить заказ',
+                    to: '/checkout',
+                },
+
+            ];
 
             return {
                 navigationList,

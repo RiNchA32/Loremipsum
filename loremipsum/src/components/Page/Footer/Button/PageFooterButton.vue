@@ -1,11 +1,14 @@
 <template>
-    <div class="page-footer-button">
+    <component
+        :is="tag"
+        class="page-footer-button"
+    >
         <Icon :ico="ico"
               class="page-footer-button__icon"/>
         <span class="page-footer-button__text">
             {{ text }}
         </span>
-    </div>
+    </component>
 </template>
 
 <script lang="ts">
@@ -25,6 +28,10 @@
             ico: {
                 type: [String, Number] as PropType<Icons>,
                 default: -1,
+            },
+            tag: {
+                type: String,
+                default: 'div',
             },
         },
     });

@@ -1,5 +1,9 @@
 .page-header {
-  background:  #10101D;
+  background:  rgba(16, 16, 29, 0.90);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 
   &__logo{
     height: auto;

@@ -4,7 +4,20 @@ import Page from '../components/Page/Page.vue'
 const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
-        name: 'home',
+        name: 'business',
+        component: Page,
+    },
+    {
+        path: '/about',
+        name: 'about',
+        component: Page,
+    }, {
+        path: '/prices',
+        name: 'prices',
+        component: Page,
+    }, {
+        path: '/checkout',
+        name: 'checkout',
         component: Page,
     },
 ]
