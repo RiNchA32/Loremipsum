@@ -2,17 +2,13 @@
     <div class="banner">
         <div class="banner__content">
             <BannerTitle/>
-            <BannerList>
-                <BannerListItem>
-                    1234
-                </BannerListItem>
-            </BannerList>
+            <BannerList title="At vero eos et accusamus et iusto odio dignissimos ducimus!"
+                        :list="bannerList"/>
             <div class="banner__buttons">
-                <button>
-                </button>
-                <button>
-                </button>
-
+                <Button color-blue
+                        text="Заказать"/>
+                <Button color-white
+                        text="Подробнее"/>
             </div>
         </div>
     </div>
@@ -22,12 +18,22 @@
     import {defineComponent} from 'vue';
     import BannerTitle from '@/components/Banner/Title/BannerTitle.vue';
     import BannerList from '@/components/Banner/List/BannerList.vue';
-    import BannerListItem from '@/components/Banner/List/Item/banner-list-item.vue';
+    import Button from '@/components/Button/Button.vue';
 
     export default defineComponent({
         name: 'Banner',
-        components: {BannerListItem, BannerList, BannerTitle},
+        components: {Button, BannerList, BannerTitle},
+        setup() {
+            const bannerList = [
+                '- Totam rem aperiam eaque ipsa',
+                '- Sit voluptatem accusantium doloremque laudantium',
+                '- Sed ut perspiciatis, unde omnis iste natus error',
+            ]
 
+            return {
+                bannerList,
+            }
+        },
     });
 </script>
 

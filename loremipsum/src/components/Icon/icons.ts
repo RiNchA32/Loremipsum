@@ -4,4 +4,8 @@ export const enum Icons {
     WebMoney,
     YandexMoney,
     Qiwiwallet,
+    IconFile,
+    IconPayment,
+    IconPercent,
+    IconSearch,
 }

@@ -12,6 +12,40 @@ body {
 li {
   list-style-type: none;
 }
+
 a {
   color: currentColor;
+}
+
+button {
+  cursor: pointer;
+  align-items: inherit;
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  text-align: inherit;
+  font: inherit;
+  font-family: 'Lato', sans-serif;
+  color: inherit;
+  user-select: none;
+}
+
+[type="button"] {
+  cursor: pointer;
+  text-align: inherit;
+}
+
+input {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+  resize: none;
+  border: none;
+  border-radius: 0;
+  background: none;
+  font-family: 'Lato', sans-serif;
+  font-size: inherit;
 }

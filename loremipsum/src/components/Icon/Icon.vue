@@ -15,6 +15,10 @@
     import IconVk from '@/components/Icon/templates/IconVk.vue';
     import IconQiwiwallet from '@/components/Icon/templates/IconQiwiwallet.vue';
     import IconYandexMoney from '@/components/Icon/templates/IconYandexMoney.vue';
+    import IconFile from '@/components/Icon/templates/IconFile.vue';
+    import IconPayment from '@/components/Icon/templates/IconPayment.vue';
+    import IconPercent from '@/components/Icon/templates/IconPercent.vue';
+    import IconSearch from '@/components/Icon/templates/IconSearch.vue';
 
     export default defineComponent({
         name: 'Icon',
@@ -32,7 +36,10 @@
                 [Icons.Vk]: IconVk,
                 [Icons.WebMoney]: IconWebMoney,
                 [Icons.YandexMoney]: IconYandexMoney,
-
+                [Icons.IconFile]: IconFile,
+                [Icons.IconPayment]: IconPayment,
+                [Icons.IconPercent]: IconPercent,
+                [Icons.IconSearch]: IconSearch,
             };
 
             const svgImport = computed(() => SVG_ICONS_MAP[props.ico]);

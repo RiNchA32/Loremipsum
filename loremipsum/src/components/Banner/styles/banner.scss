@@ -5,9 +5,17 @@
   background-size: cover;
 
   &__content {
-
     padding: 200px 0 100px;
     max-width: 1169px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
   }
 }

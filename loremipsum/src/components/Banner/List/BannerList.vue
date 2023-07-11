@@ -1,6 +1,16 @@
 <template>
     <ul class="banner-list">
-        <slot></slot>
+        <div class="banner-list__title">
+            {{ title }}
+        </div>
+        <li v-for="item in list"
+            :key="item"
+            class="banner-list__item"
+        >
+            <span class="banner-list__text">
+                {{ item }}
+            </span>
+        </li>
     </ul>
 </template>
 
@@ -9,6 +19,16 @@
 
     export default defineComponent({
         name: 'BannerList',
+        props: {
+            title: {
+                type: String,
+                default: '',
+            },
+            list: {
+                type: Array,
+                default: () => ([]),
+            },
+        },
     });
 </script>
 

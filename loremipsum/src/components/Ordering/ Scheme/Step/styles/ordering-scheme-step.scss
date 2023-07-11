@@ -1,0 +1,28 @@
+.ordering-scheme-step {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  &__frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+    background: #3E9CDC;
+    border-radius: 50%;
+    border: 5px solid #286690;
+  }
+
+  &__icon {
+    font-size: 55px;
+    color: #FFFFFF;
+  }
+
+  &__text {
+    color: #FFFFFF;
+    text-align: center;
+  }
+}

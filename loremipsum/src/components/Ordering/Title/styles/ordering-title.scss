@@ -1,0 +1,22 @@
+.ordering-title {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 30px;
+
+  &__text {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  &__select {
+    color: #3E9CDC;
+  }
+
+  &__subtitle {
+    color: #BBB;
+    font-size: 18px;
+  }
+}

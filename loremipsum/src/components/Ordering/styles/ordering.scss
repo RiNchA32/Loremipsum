@@ -1,0 +1,17 @@
+.ordering {
+  padding: 120px 0 150px;
+  min-height: 600px;
+  background-image: url("@/assets/ordering-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-color: #272733;
+
+  &__content {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    max-width: 1169px;
+    margin: 0 auto;
+    grid-gap: 80px;
+  }
+}

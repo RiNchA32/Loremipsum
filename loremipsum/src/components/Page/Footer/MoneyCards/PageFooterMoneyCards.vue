@@ -2,11 +2,14 @@
     <div class="page-footer-money-cards">
         <PageFooterList>
             <PageFooterListItem
-                v-for="item in MoneyCardsList"
+                v-for="item in moneyCardsList"
                 :key="item"
             >
-                <PageFooterButton :text="item.text"
-                                  :ico="item.icon"/>
+                <PageFooterButton
+                    :text="item.text"
+                    :ico="item.icon"
+                    tag="button"
+                />
             </PageFooterListItem>
         </PageFooterList>
     </div>
@@ -23,7 +26,7 @@
         name: 'PageFooterMoneyCards',
         components: {PageFooterButton, PageFooterListItem, PageFooterList},
         setup() {
-            const MoneyCardsList = [
+            const moneyCardsList = [
                 {
                     text: 'Qiwi wallet',
                     icon: Icons.Qiwiwallet,
@@ -43,7 +46,7 @@
             ];
 
             return {
-                MoneyCardsList,
+                moneyCardsList,
             }
         },
     });

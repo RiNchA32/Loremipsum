@@ -4,8 +4,13 @@
   align-items: center;
   text-decoration: none;
 
+  &:hover {
+    color: #43ABF0;
+  }
+
   &__icon {
     font-size: 20px;
+    color: #3E9CDC;
   }
 
   &__text {

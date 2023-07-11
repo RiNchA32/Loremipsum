@@ -2,7 +2,7 @@
     <div class="page-footer-contacts">
         <PageFooterList>
             <PageFooterListItem
-                v-for="item in ContactsList"
+                v-for="item in contactsList"
                 :key="item"
             >
                 <PageFooterButton :text="item.text"
@@ -26,7 +26,7 @@
         name: 'PageFooterContacts',
         components: {PageFooterButton, PageFooterListItem, PageFooterList},
         setup() {
-            const ContactsList = [
+            const contactsList = [
                 {
                     text: 'info@ipsum228.com',
                     icon: Icons.Envelope,
@@ -40,7 +40,7 @@
             ]
 
             return {
-                ContactsList,
+                contactsList,
             }
         },
     });
