@@ -1,8 +1,8 @@
 .ordering-scheme {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: center;
+  gap: 50px 30px;
 
   &__step {
     width: 209px;

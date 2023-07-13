@@ -1,0 +1,50 @@
+.select {
+  border-radius: 3px;
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    min-height: 48px;
+    background: rgba(62, 65, 81, 0.85);
+  }
+
+  &__input {
+    color: #FFF;
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  &__icon {
+    font-size: 21px;
+  }
+
+  &__dropdown {
+    border: 1px solid #3D4050;
+    padding: 3px;
+    border-top: none;
+    background: rgba(39, 39, 51, 0.90);
+  }
+
+  &__list {
+    max-height: 180px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      border-radius: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 6px;
+    }
+  }
+
+  &__option {
+    margin-right: 6px;
+  }
+}

@@ -1,10 +1,11 @@
 <template>
     <div class="ordering-scheme">
-        <OrderingSchemeStep v-for="item in orderingSchemeSteps"
-                            :key="item"
-                            :text="item.text"
-                            :ico="item.icon"
-                            class="ordering-scheme__step"
+        <OrderingSchemeStep
+            v-for="item in orderingSchemeSteps"
+            :key="item"
+            :text="item.text"
+            :ico="item.icon"
+            class="ordering-scheme__step"
         />
     </div>
 </template>

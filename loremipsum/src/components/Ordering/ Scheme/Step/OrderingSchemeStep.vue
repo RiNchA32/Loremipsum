@@ -1,5 +1,12 @@
 <template>
     <div class="ordering-scheme-step">
+        <div class="ordering-scheme-step__dots">
+            <div v-for="dot in 5"
+                 :key="dot"
+                 class="ordering-scheme-step__dot"
+            >
+            </div>
+        </div>
         <div class="ordering-scheme-step__frame">
             <Icon
                 :ico="ico"

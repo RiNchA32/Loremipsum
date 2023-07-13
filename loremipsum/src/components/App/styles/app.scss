@@ -5,6 +5,25 @@ body {
   margin: 0;
 }
 
+html,
+body {
+  &,
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #3D4050 transparent;
+
+    &::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+      background: #3D4050;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #3E9CDC;
+    }
+  }
+}
+
 * {
   box-sizing: border-box;
 }

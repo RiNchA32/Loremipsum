@@ -2,6 +2,7 @@
     <button :class="buttonModifiers"
             class="button"
     >
+        <slot></slot>
         <span class="button__text">
             {{text}}
         </span>

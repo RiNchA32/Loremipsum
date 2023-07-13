@@ -3,6 +3,29 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  position: relative;
+
+  &:last-child {
+    --ordering-scheme-step-dot: none;
+  }
+
+  &__dots {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 47px;
+    left: 50%;
+    transform: translateX(64px)
+  }
+
+  &__dot {
+    display: var(--ordering-scheme-step-dot, block);
+    background: #C4C4C4;
+    min-width: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
 
   &__frame {
     display: flex;

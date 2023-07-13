@@ -1,0 +1,14 @@
+.select-option {
+  padding: 10px;
+  cursor: pointer;
+  color: #FFFFFF;
+
+  &:hover {
+    color: #42A9ED;
+    background: rgba(0, 0, 0, 20%);
+  }
+
+  &__text {
+    font-size: 18px;
+  }
+}

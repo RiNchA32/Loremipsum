@@ -19,6 +19,7 @@
     import IconPayment from '@/components/Icon/templates/IconPayment.vue';
     import IconPercent from '@/components/Icon/templates/IconPercent.vue';
     import IconSearch from '@/components/Icon/templates/IconSearch.vue';
+    import IconAngleTop from '@/components/Icon/templates/IconAngleTop.vue';
 
     export default defineComponent({
         name: 'Icon',
@@ -40,6 +41,7 @@
                 [Icons.IconPayment]: IconPayment,
                 [Icons.IconPercent]: IconPercent,
                 [Icons.IconSearch]: IconSearch,
+                [Icons.IconAngleTop]: IconAngleTop,
             };
 
             const svgImport = computed(() => SVG_ICONS_MAP[props.ico]);
