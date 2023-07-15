@@ -20,6 +20,7 @@
     import IconPercent from '@/components/Icon/templates/IconPercent.vue';
     import IconSearch from '@/components/Icon/templates/IconSearch.vue';
     import IconAngleTop from '@/components/Icon/templates/IconAngleTop.vue';
+    import IconAttachFile from '@/components/Icon/templates/IconAttachFile.vue';
 
     export default defineComponent({
         name: 'Icon',
@@ -42,6 +43,7 @@
                 [Icons.IconPercent]: IconPercent,
                 [Icons.IconSearch]: IconSearch,
                 [Icons.IconAngleTop]: IconAngleTop,
+                [Icons.IconAttachFile]: IconAttachFile,
             };
 
             const svgImport = computed(() => SVG_ICONS_MAP[props.ico]);

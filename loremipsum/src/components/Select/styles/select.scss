@@ -1,11 +1,11 @@
 .select {
-  border-radius: 3px;
-  overflow: hidden;
+  position: relative;
 
   &__content {
     display: flex;
     min-height: 48px;
     background: rgba(62, 65, 81, 0.85);
+    border-radius: 3px;
   }
 
   &__input {
@@ -22,13 +22,23 @@
 
   &__icon {
     font-size: 21px;
+    transition: transform .1s linear;
+
+    &--is-close {
+      transform: rotate(180deg);
+    }
   }
 
   &__dropdown {
+    position: absolute;
+    z-index: 100;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
     border: 1px solid #3D4050;
     padding: 3px;
-    border-top: none;
     background: rgba(39, 39, 51, 0.90);
+    border-radius: 0 0 3px 3px;
   }
 
   &__list {

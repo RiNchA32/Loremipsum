@@ -8,5 +8,7 @@ export const enum Icons {
     IconPayment,
     IconPercent,
     IconSearch,
-    IconAngleTop
+    IconAngleTop,
+    IconAttachFile
+
 }

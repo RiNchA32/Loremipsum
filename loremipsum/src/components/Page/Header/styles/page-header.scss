@@ -19,5 +19,9 @@
     padding: 32px 0;
     max-width: 1169px;
     margin: 0 auto;
+
+    @media screen and (max-width: 1024px) {
+      gap: 20px;
+    }
   }
 }
