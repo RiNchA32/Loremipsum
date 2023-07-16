@@ -6,12 +6,20 @@
     min-height: 48px;
     background: rgba(62, 65, 81, 0.85);
     border-radius: 3px;
+
+    @media screen and (max-width: 767px) {
+      min-height: 38px;
+    }
   }
 
   &__input {
     color: #FFF;
     font-size: 18px;
     padding: 0 10px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+    }
   }
 
   &__button {
@@ -23,6 +31,10 @@
   &__icon {
     font-size: 21px;
     transition: transform .1s linear;
+
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+    }
 
     &--is-close {
       transform: rotate(180deg);

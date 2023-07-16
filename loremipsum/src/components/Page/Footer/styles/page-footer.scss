@@ -1,10 +1,15 @@
 .page-footer {
   background: #3D4050;
   min-height: 80px;
+  padding: 0 20px;
 
   &__cooperate {
     color: #FFFFFF;
     font-size: 13px;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
 
   &__content {
@@ -15,12 +20,32 @@
     max-width: 1169px;
     margin: 0 auto;
     grid-auto-flow: column;
+
+    @media screen and (max-width: 1365px) {
+      align-items: unset;
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-auto-flow: row;
+      grid-gap: 15px;
+      justify-items: center;
+    }
   }
 
   &__section {
     position: relative;
     padding-right: 41px;
     margin-right: 40px;
+
+    @media screen and (max-width: 1365px) {
+      display: flex;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin: 0;
+      padding: 0;
+    }
 
     &::after {
       content: '';
@@ -31,6 +56,10 @@
       height: 100%;
       width: 1px;
       background: #C3C3C3;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
     }
 
     &:last-child {

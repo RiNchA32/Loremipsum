@@ -15,7 +15,11 @@
     position: absolute;
     top: 47px;
     left: 50%;
-    transform: translateX(64px)
+    transform: translateX(64px);
+
+    @media screen and (max-width: 767px) {
+      top: 36px;
+    }
   }
 
   &__dot {
@@ -37,15 +41,29 @@
     background: #3E9CDC;
     border-radius: 50%;
     border: 5px solid #286690;
+
+    @media screen and (max-width: 767px) {
+      height: 75px;
+      width: 75px;
+      min-width: 75px;
+    }
   }
 
   &__icon {
     font-size: 55px;
     color: #FFFFFF;
+
+    @media screen and (max-width: 767px) {
+      font-size: 35px;
+    }
   }
 
   &__text {
     color: #FFFFFF;
     text-align: center;
+
+    @media screen and (max-width: 767px) {
+     font-size: 12px;
+    }
   }
 }

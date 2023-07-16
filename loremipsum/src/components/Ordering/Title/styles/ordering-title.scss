@@ -7,8 +7,12 @@
   &__text {
     color: #FFFFFF;
     font-size: 36px;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+      font-size: 26px;
+    }
   }
 
   &__select {
@@ -18,5 +22,9 @@
   &__subtitle {
     color: #BBB;
     font-size: 18px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+    }
   }
 }

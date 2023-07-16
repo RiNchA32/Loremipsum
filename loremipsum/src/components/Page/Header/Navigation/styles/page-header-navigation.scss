@@ -4,5 +4,12 @@
      align-items: center;
      gap: 60px;
 
+    @media screen and (max-width: 767px) {
+      gap: 50px;
+    }
+
+    @media screen and (max-width: 449px) {
+      gap: 25px;
+    }
   }
 }

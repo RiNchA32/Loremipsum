@@ -1,10 +1,14 @@
 .ordering {
-  padding: 120px 0 150px;
+  padding: 120px 20px 150px;
   min-height: 600px;
   background-image: url("@/assets/ordering-bg.png");
   background-position: center;
   background-size: cover;
   background-color: #272733;
+
+  @media screen and (max-width: 767px) {
+    padding: 40px 20px;
+  }
 
   &__content {
     display: grid;
@@ -13,5 +17,9 @@
     max-width: 1169px;
     margin: 0 auto;
     grid-gap: 80px;
+
+    @media screen and (max-width: 767px) {
+      grid-gap: 50px;
+    }
   }
 }

@@ -4,10 +4,16 @@
   width: 100%;
   top: 0;
   left: 0;
+  padding: 0 20px;
+  z-index: 200;
 
   &__logo{
     height: auto;
     width: 247px;
+
+    @media screen and (max-width: 767px) {
+      width: 200px;
+    }
   }
 
   &__content{
@@ -22,6 +28,13 @@
 
     @media screen and (max-width: 1024px) {
       gap: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+      gap: 15px;
+      padding: 20px 0;
+      min-height: auto;
+      flex-direction: column;
     }
   }
 }
