@@ -1,10 +1,15 @@
 <template>
     <div class="banner">
         <div class="banner__content">
-            <BannerTitle/>
-            <BannerList title="At vero eos et accusamus et iusto odio dignissimos ducimus!"
-                        :list="bannerList"/>
-            <div class="banner__buttons">
+            <BannerTitle data-aos="fade-left"/>
+            <BannerList
+                data-aos="fade-left"
+                title="At vero eos et accusamus et iusto odio dignissimos ducimus!"
+                :list="bannerList"
+            />
+            <div data-aos="fade-left"
+                 class="banner__buttons"
+            >
                 <Button color-blue
                         text="Заказать"/>
                 <Button color-white

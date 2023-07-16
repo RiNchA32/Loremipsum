@@ -3,7 +3,7 @@
         <div class="ordering__content">
             <OrderingTitle/>
             <OrderingScheme/>
-            <OrderingForm/>
+            <OrderingForm data-aos="fade"/>
         </div>
     </div>
 </template>

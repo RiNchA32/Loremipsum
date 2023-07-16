@@ -1,9 +1,13 @@
 <template>
-    <div class="ordering-title">
+    <div data-aos="fade"
+         class="ordering-title"
+    >
         <span class="ordering-title__text">Оформление
             <span class="ordering-title__select">Заказа</span>
         </span>
-        <span class="ordering-title__subtitle">
+        <span data-aos="fade-up"
+              class="ordering-title__subtitle"
+        >
             Перед заполнением формы ознакомьтесь с нашей схемой работы!
         </span>
     </div>

@@ -1,9 +1,9 @@
 <template>
     <div class="page">
-        <PageHeader/>
+        <PageHeader data-aos="fade"/>
         <Banner/>
         <Ordering/>
-        <PageFooter/>
+        <PageFooter />
     </div>
 </template>
 
